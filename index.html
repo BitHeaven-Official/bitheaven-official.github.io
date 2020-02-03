@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <title>Beta.BitHeaven</title>
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+/*font-family: 'Ubuntu Mono', monospace;*/
+
+* {
+    padding: 0;
+    margin: 0;
+    transition-property: color, text-shadow, transform;
+}
+
+body {
+    background: #111111;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    white-space: nowrap;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    position: absolute;
+    font-size: 100px;
+    display: inline;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    color: #bbbbbb;
+    animation: anim 10s infinite;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+span {
+    word-spacing: 40px;
+    letter-spacing: 30px;
+    white-space: nowrap;
+    position: absolute;
+    font-size: 100px;
+    display: inline;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    color: #bbbbbb;
+    animation: anim 10s infinite;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 300px;
+    filter: blur(15px);
+}
+
+@keyframes anim {
+    0%, 100% {
+        transform: translateX(-50%);
+        color: #bbb;
+    }
+    10% {
+        transform: translateX(-64%);
+        color: #bbb;
+    }
+    15% {
+        transform: translateX(0%);
+        color: #fff;
+        text-shadow: #fff 0 0 2px;
+    }
+    35% {
+        transform: translateX(-10%);
+        color: #bbb;
+    }
+    40% {
+        transform: translateX(-50%);
+        color: #bbb;
+    }
+    50% {
+        transform: translateX(0%);
+        color: #fff;
+        text-shadow: #fff 0 0 2px;
+    }
+    65% {
+        transform: translateX(-100%);
+        color: #bbb;
+    }
+    77% {
+        transform: translateX(0%);
+        color: #bbb;
+    }
+    89% {
+        transform: translateX(-40%);
+        color: #bbb;
+    }
+    95% {
+        transform: translateX(-5%);
+        color: #fff;
+        text-shadow: #fff 0 0 2px;
+    }
+}
+
+table {
+    font-family: 'Ubuntu Mono', monospace;
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+    text-align: left;
+    background: transparent;
+    border-color: transparent;
+    border: 0px;
+}
+
+table tr {
+    height: 50px;
+}
+
+table tr td {
+    width: 300px;
+}
+
+table tr td:nth-child(2) {
+    width: 500px;
+    font-size: 20px;
+    color: #555555;
+}
+
+table tr td a {
+    color: #d4b500;    
+    font-size: 30px;
+    text-decoration: none;
+    animation: anim 1s 1; 
+    transition: 0.2s ease-out;
+}
+
+table tr td a:hover {
+    text-shadow: #d4b500 0 0 10px;
+    filter: blur(1px);
+}
+
+.footer {
+    font-family: 'Ubuntu Mono', monospace;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+
+h2 {
+    color: #555555;
+    text-align: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
+}
+
+</style>
+<body>
+    <h1>Bit Heaven</h1>
+    <span>Bit Heaven</span>
+    <table>
+        <tbody><tr>
+            <td><a href="https://ft.BitHeaven.ru/">Bit.FileTransfer</a></td>
+            <td>Файловое хранилище.</td>
+        </tr>
+        <tr>
+            <td><a href="https://blog.bitheaven.ru">Bit.Blog</a></td>
+            <td>Блог.</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.bitheaven.ru">BitHeaven</a></td>
+            <td>Главный сайт.</td>
+        </tr>
+        <tr>
+            <td><a href="mailto:bit.heaven@bk.ru" target="_blank">bit.heaven@bk.ru</a></td>
+            <td>Почта</td>
+        </tr>
+        <tr>
+            <td><a href="#">Settings</a></td>
+            <td>Окно настроек (не рабочее).</td>
+        </tr>
+        <tr>
+            <td><a href="#">Soon...</a></td>
+            <td>Ожидайте новых проектов.</td>
+        </tr>
+    </tbody></table>
+    <div class="footer">
+        <h2>©2019 by BitHeaven.</h2>
+    </div>
+</body></html>
